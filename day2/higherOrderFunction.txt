@@ -1,13 +1,33 @@
 
 ->map: Transforms each element of an array by applying a provided transformation function.
 
+let numbers = [1, 2, 3, 4, 5]
+let squaredNumbers = numbers.map { $0 * $0 }
+// squaredNumbers: [1, 4, 9, 16, 25]
+
+
 ->filter: Returns a new array containing the elements that satisfy a given condition.
+let numbers = [1, 2, 3, 4, 5]
+let evenNumbers = numbers.filter { $0 % 2 == 0 }
+// evenNumbers: [2, 4]
+
 
 ->reduce: Combines all elements of an array into a single value using a combining function.
+let numbers = [1, 2, 3, 4, 5]
+let sum = numbers.reduce(0, +)
+// sum: 15
 
 ->compactMap: Transforms each element of an array and filters out any resulting nil values.
 
+let strings = ["1", "2", "3", "four", "5"]
+let convertedNumbers = strings.compactMap { Int($0) }
+// convertedNumbers: [1, 2, 3, 5]
+
+
 ->sorted: Returns a new array with the elements sorted based on a provided sorting closure.
+let strings = ["1", "2", "3", "four", "5"]
+let convertedNumbers = strings.compactMap { Int($0) }
+// convertedNumbers: [1, 2, 3, 5]
 
 
 *Tuple* is multiple values into a single compound value. 
@@ -50,3 +70,46 @@ Swift has methods to manupulate array:
 -> sort: Sorts the elements of an array in place.
 
 -> reverse: Reverses the order of elements in an array.
+
+
+var fruits = ["Apple", "Banana", "Orange"]
+print("Initial array:", fruits) // Output: Initial array: ["Apple", "Banana", "Orange"]
+
+// append: Adds an element to the end
+fruits.append("Mango")
+print("After append:", fruits) // Output: After append: ["Apple", "Banana", "Orange", "Mango"]
+
+// remove: Removes an element from the array at a specified index
+fruits.remove(at: 1)
+print("After remove:", fruits) // Output: After remove: ["Apple", "Orange", "Mango"]
+
+// count: Returns the number of elements in the array
+let numberOfFruits = fruits.count
+print("Number of fruits:", numberOfFruits) // Output: Number of fruits: 3
+
+// contains: Checks if the array contains a specific element
+let containsOrange = fruits.contains("Orange")
+print("Contains Orange:", containsOrange) // Output: Contains Orange: true
+
+// isEmpty: Checks if the array is empty
+let isEmptyArray = fruits.isEmpty
+print("Is the array empty:", isEmptyArray) // Output: Is the array empty: false
+
+// first: Returns the first element of the array
+if let firstFruit = fruits.first {
+    print("First fruit:", firstFruit) // Output: First fruit: Apple
+}
+
+// last: Returns the last element of the array
+if let lastFruit = fruits.last {
+    print("Last fruit:", lastFruit) // Output: Last fruit: Mango
+}
+
+// sort: Sorts the elements of the array in place
+fruits.sort()
+print("After sorting:", fruits) // Output: After sorting: ["Apple", "Mango", "Orange"]
+
+// reverse: Reverses the order of elements in the array
+fruits.reverse()
+print("After reversing:", fruits) // Output: After reversing: ["Orange", "Mango", "Apple"]
+
