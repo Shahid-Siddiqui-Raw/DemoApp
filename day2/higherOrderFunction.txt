@@ -1,0 +1,52 @@
+
+->map: Transforms each element of an array by applying a provided transformation function.
+
+->filter: Returns a new array containing the elements that satisfy a given condition.
+
+->reduce: Combines all elements of an array into a single value using a combining function.
+
+->compactMap: Transforms each element of an array and filters out any resulting nil values.
+
+->sorted: Returns a new array with the elements sorted based on a provided sorting closure.
+
+
+*Tuple* is multiple values into a single compound value. 
+can hold values of different types and are useful for returning multiple values
+
+zip is a Swift function that combines two sequences into a single sequence of pairs.
+
+
+let numbers = [1, 2, 3]
+let letters = ["A", "B", "C" ]
+let combined = Array(zip(numbers, letters)) // [(1, "A"), (2, "B"), (3, "C")]
+print(combined.first as Any)
+
+let numbers = [1, 2, 3]
+let letters = ["A", "B", "C" , "D"] // D will not get printed as “D” will not get printed
+let combined = Array(zip(numbers, letters)) // [(1, "A"), (2, "B"), (3, "C")]
+print(combined.first as Any)
+
+
+
+
+
+
+Swift has methods to manupulate array:
+
+-> append: Adds an element to the end of an array.
+
+-> remove: Removes an element from an array at a specified index.
+
+-> count: Returns the number of elements in an array.
+
+-> contains: Checks if an array contains a specific element.
+
+-> isEmpty: Checks if an array is empty.
+
+-> first: Returns the first element of an array.
+
+-> last: Returns the last element of an array.
+
+-> sort: Sorts the elements of an array in place.
+
+-> reverse: Reverses the order of elements in an array.
