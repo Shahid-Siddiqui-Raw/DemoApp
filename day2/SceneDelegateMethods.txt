@@ -1,0 +1,18 @@
+scene(_:willConnectTo:options:): This method is called when a new scene is being created and allows you to configure the associated scene session.
+
+
+sceneDidDisconnect(_:): This method is called when a scene is disconnected, which can happen when a user closes a window or the system terminates 
+a scene.
+
+
+sceneWillEnterForeground(_:): This method is called when a scene is about to enter the foreground, giving you an opportunity to prepare for the 
+scene becoming active.
+
+
+sceneDidEnterBackground(_:): This method is called when a scene enters the background, allowing you to save data or perform cleanup specific to 
+that scene.
+
+
+AppDelegate vs SceneDeligate
+AppDelegate handles the overall application-level events and functionality, 
+SceneDelegate is responsible for managing individual scenes in multi-window apps.
