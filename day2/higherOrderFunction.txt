@@ -57,22 +57,24 @@ print(combined.first as Any)
 Swift has methods to manupulate array:
 
 -> append: Adds an element to the end of an array.
+has O(1) normal time complexity and O(n) when the underlying space is to be resized
 
--> remove: Removes an element from an array at a specified index.
+-> remove: Removes an element from an array at a specified index.O(n)
 
--> count: Returns the number of elements in an array.
+-> count: Returns the number of elements in an array.O(1)
 
--> contains: Checks if an array contains a specific element.
+-> contains: Checks if an array contains a specific element.O(1)
 
--> isEmpty: Checks if an array is empty.
+-> isEmpty: Checks if an array is empty.O(1)
 
--> first: Returns the first element of an array.
+-> first: Returns the first element of an array.O(1)
 
--> last: Returns the last element of an array.
+-> last: Returns the last element of an array.O(1)
+
 
 -> sort: Sorts the elements of an array in place.
-
--> reverse: Reverses the order of elements in an array.
+does quicksort O(nlogn)
+-> reverse: Reverses the order of elements in an array.O(n)
 
 
 var fruits = ["Apple", "Banana", "Orange"]
