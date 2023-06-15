@@ -3,7 +3,7 @@
 
 let numbers = [1, 2, 3, 4, 5]
 let squaredNumbers = numbers.map { $0 * $0 }
-// squaredNumbers: [1, 4, 9, 16, 25]
+// [1, 4, 9, 16, 25]
 
 
 ->filter: Returns a new array containing the elements that satisfy a given condition.
