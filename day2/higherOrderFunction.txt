@@ -20,8 +20,9 @@ let sum = numbers.reduce(0, +)
 ->compactMap: Transforms each element of an array and filters out any resulting nil values.
 
 let strings = ["1", "2", "3", "four", "5"]
-let convertedNumbers = strings.compactMap { Int($0) }
-// convertedNumbers: [1, 2, 3, 5]
+let sortedArr = strings.sorted()
+
+// sortedArr: ["1", "2", "3", "5", "four"]
 
 
 ->sorted: Returns a new array with the elements sorted based on a provided sorting closure.
