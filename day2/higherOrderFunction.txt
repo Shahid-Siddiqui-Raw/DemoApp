@@ -20,15 +20,17 @@ let sum = numbers.reduce(0, +)
 ->compactMap: Transforms each element of an array and filters out any resulting nil values.
 
 let strings = ["1", "2", "3", "four", "5"]
-let sortedArr = strings.sorted()
+let convertedNumbers = strings.compactMap { Int($0) }
 
-// sortedArr: ["1", "2", "3", "5", "four"]
+// convertedNumbers: [1, 2, 3, 5]
 
 
 ->sorted: Returns a new array with the elements sorted based on a provided sorting closure.
+
 let strings = ["1", "2", "3", "four", "5"]
-let convertedNumbers = strings.compactMap { Int($0) }
-// convertedNumbers: [1, 2, 3, 5]
+let sortedArr = strings.sorted()
+
+// sortedArr: ["1", "2", "3", "5", "four"]
 
 
 *Tuple* is multiple values into a single compound value. 
